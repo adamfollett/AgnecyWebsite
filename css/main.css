@@ -1,0 +1,1798 @@
+/*! HTML5 Boilerplate v5.0.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+@font-face {
+  font-family:'FuturaStd-Light';
+  src: url('FuturaStd-Light_gdi.eot');
+  src: url('FuturaStd-Light_gdi.eot?#iefix') format('embedded-opentype'),
+    url('FuturaStd-Light_gdi.woff') format('woff'),
+    url('FuturaStd-Light_gdi.ttf') format('truetype'),
+    url('FuturaStd-Light_gdi.svg#FuturaStd-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  unicode-range: U+0020-25CA;
+}
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html, body, p, h1, h2, h3, h4{
+    font-family: "FuturaStd-Light", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+}
+h2 {
+    color: #6d1f7e;
+    font-size: 40px;
+    font-weight: normal;
+}
+/* Header */
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+    height: 1100px;
+}
+.large-header h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 20px;
+}
+.large-header span {
+    width: 100%;
+    float: left;
+}
+.large-header p {
+    width: 100%;
+    float: left;
+    text-align: center;
+    color: #fff;
+    font-size: 40px;
+    margin-top: 100px;
+    letter-spacing: 0;
+}
+.large-header span img {
+    margin: 0 auto;
+    text-align: center;
+}
+  .mobilebio {
+    display: none;
+  }
+  .fullbio {
+    display: inline;
+  }
+.starCanvas .large-header {
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      -webkit-linear-gradient(#38013d, #6d1f7e); /* For Safari 5.1 to 6.0 */    
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      -o-linear-gradient(#38013d, #6d1f7e); /* For Opera 11.1 to 12.0 */    
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      -moz-linear-gradient(#38013d, #6d1f7e); /* For Firefox 3.6 to 15 */    
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      linear-gradient(#38013d, #6d1f7e); /* Standard syntax */;
+    background-size: 100%;
+}
+.starCanvas .large-header.heyheyhey {
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      url(../img/Heman.png) bottom center no-repeat,
+      -webkit-linear-gradient(#38013d, #6d1f7e); /* For Safari 5.1 to 6.0 */    
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      url(../img/Heman.png) bottom center no-repeat,
+      -o-linear-gradient(#38013d, #6d1f7e); /* For Opera 11.1 to 12.0 */    
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      url(../img/Heman.png) bottom center no-repeat,
+      -moz-linear-gradient(#38013d, #6d1f7e); /* For Firefox 3.6 to 15 */    
+    background: 
+      url(../img/cloudBG.png) bottom center no-repeat,
+      url(../img/Heman.png) bottom center no-repeat,
+      linear-gradient(#38013d, #6d1f7e); /* Standard syntax */;
+    background-size: 100%;
+}.mobileTitle {
+  display: none;
+}
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    color: #f9f1e9;
+    text-align: center;
+    top: 425px;
+    left: 50%;
+    -webkit-transform: translate3d(-50%,-50%,0);
+    transform: translate3d(-50%,-50%,0);
+}
+.main-title a img {
+
+}
+.main-title a img:hover {
+
+}
+.showcaseLogo {
+  height: 225px;
+}
+.showcaseText {
+  height: 100px;
+}
+.showcaseMore {
+  height: 100px;
+  display: none;
+}
+.starCanvas .main-title {
+    font-size: 4.2em;
+    letter-spacing: 0.1em;
+}
+
+.cloudBG {
+  float: left;
+  width: 100%;
+  z-index: 1000;
+  position: relative;;
+}
+.cloudBG img {
+    width: 100%;
+}
+.cloudBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.navbarCloud ul li.menuLogo img, .navbarCloud ul li.menuLogo {
+      width: 0;
+      margin: 0;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+.navbarCloud ul li.menuLogo.grow img, .navbarCloud ul li.menuLogo.grow {
+      width: 80px;
+}
+.navbarCloud {
+    position: fixed;
+    color: #f9f1e9;
+    background: url('../img/cloudsXL.png') no-repeat top center;
+    background-size: 100%;
+    margin: 0 auto;
+    z-index: 100;
+    text-align: center;
+    min-height: 110px;
+    width: 1920px;
+    left: 50%;
+    margin-left: -960px;
+    transition: .3s;
+}
+.navCloud {
+    padding-top: 10px;
+    margin: 10px 75px 0 0;
+}
+.navbarCloud ul li {
+      list-style: none;
+      display: inline;
+      margin: 40px;
+}
+.cloudLayer {
+    z-index: 100;
+    position: relative;
+}
+.cloudLayer img {
+    width: 100%;
+}
+.aboutUs {
+    background: url(../img/leafBG.png) #ddd top center no-repeat;
+    background-size: 77%;
+}
+.services {
+    background-size: 100%;
+    height: 400px;
+    background: linear-gradient(to right, #6e1f7f 0%, #9557a2 50%, #6e1f7f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6e1f7f', endColorstr='#6e1f7f', GradientType=1 );
+    position: relative;
+    z-index: 1;
+}
+.portfolio {
+    background: url('../img/portBG.jpg') no-repeat bottom center;
+    background-size: 100%;
+    height: 1220px;
+}
+.process {
+    background-color: #55953b;
+}
+@-webkit-keyframes rotation {
+    from {-webkit-transform: rotate(0deg);}
+    to   {-webkit-transform: rotate(359deg);}
+}
+.process .processHeader {
+  height: 175px;
+}
+.process h1 {
+    color: #fff;
+    font-size: 52px;
+    padding-top: 90px;
+    width: 40%;
+    float: left;
+}
+.process h2 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+.stepSlider {
+  position: absolute;
+  height: 150px;
+  background-color: #64A70A;
+  color: #fff;
+  font-size: 105px;
+  font-weight: normal;
+  text-align: right;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+  width: 125px;
+  float: left;
+  padding: 0;
+}
+div[class^="step"].outViewPort .stepSlider {
+  width: 60%;
+}
+.process p {
+    font-size: 16px;
+    color: #fff;
+    width: 100%;
+}
+.process .step {
+    height: 150px;
+    margin: 5px 0;
+    position: relative;
+background: rgb(100, 167, 10); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(95,164,3,1) 51%, rgba(95,164,3,1) 51%, rgba(149,198,98,1) 52%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(51%,rgba(100, 167, 10, 1)), color-stop(51%,rgba(95,164,3,1)), color-stop(52%,rgba(149, 198, 98, 1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(100, 167, 10, 1) 51%,rgba(95,164,3,1) 51%,rgba(149, 198, 98, 1) 52%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(95,164,3,1) 51%,rgba(95,164,3,1) 51%,rgba(149,198,98,1) 52%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(95,164,3,1) 51%,rgba(95,164,3,1) 51%,rgba(149,198,98,1) 52%); /* IE10+ */
+background: linear-gradient(to right,  rgba(100, 167, 10, 1) 51%,rgba(95,164,3,1) 51%,rgba(149, 198, 98, 1) 52%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5fa403', endColorstr='#95c662',GradientType=1 ); /* IE6-9 */
+
+}
+.processRight {
+  z-index: 1;
+  height: 150px;
+  background-color: #95C662;
+  padding: 5px 155px;
+}
+.portfolio {
+    background: url('../img/portBG.jpg') no-repeat bottom center;
+    background-size: 100%;
+    height: auto;
+    padding: 40px 0;
+}
+.footer{
+    background: url('../img/footerBG.jpg') no-repeat top center;
+    background-size: 100%;
+}
+.navbar.navbar-default.navbar-fixed-top {
+  display: none;
+}
+.navbar-default {
+    background-color: #6D1F7E;
+    border-color: #6D1F7E;
+}
+@media only screen and (max-width : 768px) {
+    .starCanvas .main-title {
+        font-size: 3em;
+        top: 400px;
+    }
+}
+.isotope {
+  height: 75%;/* inherit height from body */
+  float: left;
+  width: 100%;
+}
+.isotope img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+/* clear fix */
+.isotope:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.portfolioItem {
+  float: left;
+  width: 23.65%;
+  height: auto;
+  margin: 2px;
+}
+.portfolioItem.height2 {
+    width: 47.3%;
+    overflow: hidden;
+  }
+.filters a {
+  padding: 6px 2.3%;
+  display: block;
+  text-align: center;
+  float: left;
+  margin: 10px 5px;
+  color: #fff;
+  border-radius: 18px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.filters a.purple {
+  background-color: #6d1f7e;
+}
+.filters a.orange, .branding {
+  background-color: #fbb034;
+}
+.filters a.green, .marketing {
+  background-color: #00af40;
+}
+.filters a.yellow, .interactive {
+  background-color: #d5d319;
+}
+.filters a.lblue, .seo {
+  background-color: #0194d3;
+}
+.filters a.dblue, .pr {
+  background-color: #1946ba;
+}
+.filters a.pink, .strengths {
+  background-color: #e71096;
+}
+/*footer*/
+.footer a {
+ color: #c5a3c5;
+}
+.footer h2, .footer h3, .footer h4, .footer p {
+  color: #fff;
+  font-weight: normal;
+}
+.footer h2 {
+padding-top: 45px;}
+.footer h4 {
+    margin-top: 27px;
+    margin-bottom: 10px;
+}
+.footer .col-md-4 div {
+  text-align: right;
+  margin: 66px auto;
+}
+.footer .col-md-4 div img {
+  padding: 0 4px;
+}
+/* ==========================================================================
+   Bio Flip Animation
+   ========================================================================== */
+.team {
+  padding: 80px 0
+}
+/* entire container, keeps perspective */
+.teamRow {
+  perspective: 1000;
+  width: 100%;
+  float: left;
+  height: auto;
+}
+.teamInfo {
+    float: left;
+    height: 230px;
+    width: 100%;
+    padding: 6px 0 0 0;
+}
+  .teamInfo div {
+    display: none;
+  }
+  .teamInfo div h3 {
+    font-size: 32px;
+  }
+  .teamInfo div h4 {
+    font-size: 22px;
+    color:#8e9090;
+    letter-spacing:-1px;
+    font-style:italic;;
+  }
+  .teamInfo div p {
+    font-size: 20px;
+    color: #8e9090;
+    width: 100%;
+  }
+  .front {
+    z-index: 2;
+    height: 150px;
+    width: 150px;
+  }
+  .back {
+    z-index: 1;
+  }
+  .back, .headshot img {
+    height: 150px;
+    width: 150px;
+  }
+.front, .back, .headshot img {
+    border-radius: 75px;
+    float: left;
+}
+.headshot {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  margin: 10px 11% 10px 0;
+  float: left;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.headshot .front {
+    -webkit-transition: opacity .5s ease-in-out;
+       -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+         -o-transition: opacity .5s ease-in-out;
+            transition: opacity .5s ease-in-out;
+}
+.headshot .front:hover {
+    zoom: 1;
+    filter: alpha(opacity=0);
+    opacity: 0;
+}
+.headshot[data-name="rebecca"] .front{
+  background-color: #00bcb4;
+}
+.teamInfo div.rebecca h3{
+  color: #00bcb4;
+}
+.headshot[data-name="laurie"] .front{
+  background-color: #9a989a;
+}
+.teamInfo div.laurie h3{
+  color: #9a989a;
+}
+.headshot[data-name="darrell"] .front{
+  background-color: #ffa400;
+}
+.teamInfo div.darrell h3{
+  color: #ffa400;
+}
+.headshot[data-name="roslyn"] .front{
+  background-color: #ee3a43;
+}
+.teamInfo div.roslyn h3{
+  color: #ee3a43;
+}
+.headshot[data-name="colin"] .front{
+  background-color: #00af40;
+}
+.teamInfo div.colin h3{
+  color: #00af40;
+}
+.headshot[data-name="adam"] .front{
+  background-color: #b3d88c;
+}
+.teamInfo div.adam h3{
+  color: #b3d88c;
+}
+.headshot[data-name="xiaoyu"] .front{
+  background-color: #f3ee5f;
+}
+.teamInfo div.xiaoyu h3{
+  color: #f3ee5f;
+}
+.headshot[data-name="patrick"] .front{
+  background-color: #1595d3;
+}
+.teamInfo div.patrick h3{
+  color: #1595d3;
+}
+.headshot[data-name="lou"] .front{
+  background-color: #1946ba;
+}
+.teamInfo div.lou h3{
+  color: #1946ba;
+}
+.headshot[data-name="emilie"] .front{
+  background-color: #e71096;
+}
+.teamInfo div.emilie h3{
+  color: #e71096;
+}
+/* hide back of pane during swap */
+.front, .back {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ==========================================================================
+   Showcase Hover Effects
+   ========================================================================== */
+#showcase {
+}
+.showcaseItem {
+  float: left;
+  width: 100%;
+}
+.showcaseItem img {
+  float: left;
+  width: 100%;
+}
+.showcaseItem figcaption {
+  display: none;
+}
+.grid {
+  position: relative;
+  margin: 0 auto;
+  list-style: none;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+/* Common style */
+.grid figure {
+  position: relative;
+  float: left;
+  overflow: hidden;
+  width: 100%;
+  background: #000000;
+  text-align: center;
+  z-index: 1;
+  max-height: 450px;
+}
+
+.grid figure img.banner {
+  position: relative;
+  display: block;
+  opacity: 0.8;
+  width: 100%;
+}
+
+.grid figure figcaption {
+  padding: 2em;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.25em;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.grid figure figcaption::before,
+.grid figure figcaption::after {
+  pointer-events: none;
+}
+
+.grid figure figcaption,
+.grid figure figcaption > a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Anchor will cover the whole item by default */
+/* For some effects it will show as a button */
+.grid figure figcaption > a {
+  z-index: 1000;
+  text-indent: 200%;
+  white-space: nowrap;
+  font-size: 0;
+  opacity: 0;
+}
+
+.grid figure h2 {
+  word-spacing: -0.15em;
+  font-weight: 300;
+}
+
+.grid figure h2 span {
+  font-weight: 800;
+}
+
+.grid figure h2,
+.grid figure p {
+  margin: 0;
+}
+
+.grid figure p {
+  letter-spacing: 1px;
+  font-size: 68.5%;
+}
+figure.effect-sadie figcaption::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-linear-gradient(left, rgba(72,76,97,0) 0%, rgba(0, 0, 0, 0.75) 75%);
+  background: linear-gradient(to right, rgba(72,76,97,0) 0%, rgba(0, 0, 0, 0.75) 75%);
+  content: '';
+  opacity: 0;
+  -webkit-transform: translate3d(50%,0,0);
+  transform: translate3d(50%,0,0);
+}
+figure.effect-sadie.showcaseLeft figcaption::before {
+  background: -webkit-linear-gradient(right, rgba(72,76,97,0) 0%, rgba(0, 0, 0, 0.75) 75%);
+  background: linear-gradient(to left, rgba(72,76,97,0) 0%, rgba(0, 0, 0, 0.75) 75%);
+  -webkit-transform: translate3d(-50%,0,0);
+  transform: translate3d(-50%,0,0);
+}
+figure.effect-sadie h2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  color: #484c61;
+  -webkit-transition: -webkit-transform 0.35s, color 0.35s;
+  transition: transform 0.35s, color 0.35s;
+  -webkit-transform: translate3d(0,-50%,0);
+  transform: translate3d(0,-50%,0);
+}
+
+figure.effect-sadie figcaption::before,
+figure.effect-sadie p {
+  -webkit-transition: opacity 0.55s, -webkit-transform 0.55s;
+  transition: opacity 0.55s, transform 0.55s;
+}
+
+figure.effect-sadie p {
+  position: relative;
+  padding: 0 5em;
+  width: 100%;
+  opacity: 0;
+  -webkit-transform: translate3d(20px,0,0);
+  transform: translate3d(20px,0,0);
+  font-size: 20px;
+  text-transform: none;
+  text-align: right;
+}
+figure.effect-sadie.showcaseLeft p {
+  text-align: left;
+    -webkit-transform: translate3d(-20px,0,0);
+  transform: translate3d(-20px,0,0);
+}
+figure.effect-sadie:hover h2 {
+  color: #fff;
+  -webkit-transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+  transform: translate3d(0,-50%,0) translate3d(0,-40px,0);
+}
+
+figure.effect-sadie:hover figcaption::before ,
+figure.effect-sadie:hover p {
+  opacity: 1;
+  -webkit-transform: translate3d(0,0,0);
+  transform: translate3d(0,0,0);
+}
+/* ==========================================================================
+   Star Field
+   ========================================================================== */
+
+.star {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    overflow: hidden;
+    z-index: 2;
+    animation: glitter 4.5s linear 0s infinite normal;
+    -webkit-animation: glitter 4.5s linear 0s infinite normal;
+    -moz-animation: glitter 4.5s linear 0s infinite normal;
+    -ms-animation: glitter 4.5s linear 0s infinite normal;
+    -o-animation: glitter 4.5s linear 0s infinite normal;
+    background: rgba(246, 246, 246, 0.2);
+    border-radius: 5px;
+}
+.star-top,.star-bottom{
+    position: relative;
+    display: block;
+}
+.star-top:before , 
+.star-top:after ,
+.star-bottom:before ,
+.star-bottom:after{
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-color: transparent;
+    border-radius: 85%;
+}
+/*CSS3 pseudo class for positioning curves*/
+.star-top:before {
+    top: -24px;
+    left: -24px;
+}
+.star-top:after {
+    bottom: -24px;
+    left: 24px;
+}
+.star-bottom:before {
+    top: 24px;
+    left: -24px;
+}
+.star-bottom:after {
+    top: 24px;
+    left: 24px;
+}
+/*css3 keyframes for glittering effect*/
+@-webkit-keyframes glitter {
+    0%   { -webkit-transform: scale(1.25); opacity: 1; }
+    25%  { -webkit-transform: scale(0.25); opacity: 0; }
+    50%  { -webkit-transform: scale(1.25); opacity: 1; }
+    75%  { -webkit-transform: scale(0.25); opacity: 0; }
+    100% { -webkit-transform: scale(1.25); opacity: 1; }
+}
+@-moz-keyframes glitter {
+    0%   { -moz-transform: scale(1.25); opacity: 1; }
+    25%  { -moz-transform: scale(0.25); opacity: 0; }
+    50%  { -moz-transform: scale(1.25); opacity: 1; }
+    75%  { -moz-transform: scale(0.25); opacity: 0; }
+    100% { -moz-transform: scale(1.25); opacity: 1; }
+}
+
+/* ==========================================================================
+   Services Slider
+   ========================================================================== */
+
+
+
+.gallery .control-operator:target ~ .controls .control-button {
+  color: #ccc;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.gallery .control-button:first-of-type, .items-2 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-2 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-3 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-3 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-3 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .items-4 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-4 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-4 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .items-4 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .items-5 .control-operator:nth-of-type(1):target ~ .controls .control-button:nth-of-type(1), .items-5 .control-operator:nth-of-type(2):target ~ .controls .control-button:nth-of-type(2), .items-5 .control-operator:nth-of-type(3):target ~ .controls .control-button:nth-of-type(3), .items-5 .control-operator:nth-of-type(4):target ~ .controls .control-button:nth-of-type(4), .items-5 .control-operator:nth-of-type(5):target ~ .controls .control-button:nth-of-type(5) {
+  color: white;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.gallery .item:first-of-type {
+  position: static;
+  opacity: 1;
+}
+.gallery .item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.gallery .control-operator {
+  display: none;
+}
+.gallery .control-operator:target ~ .item {
+  pointer-events: none;
+  opacity: 0;
+  animation: none;
+}
+.gallery .control-operator:target ~ .controls .control-button {
+  animation: none;
+  margin: 0 15px;
+}
+
+@keyframes controlAnimation-2 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  14.3%,
+  50% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  64.3%,
+  100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes galleryAnimation-2 {
+  0% {
+    opacity: 0;
+  }
+
+  14.3%,
+  50% {
+    opacity: 1;
+  }
+
+  64.3%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.items-2.autoplay .control-button {
+  animation: controlAnimation-2 14s infinite;
+}
+.items-2.autoplay .item {
+  animation: galleryAnimation-2 14s infinite;
+}
+.items-2 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-2 .control-button:nth-of-type(1),
+.items-2 .item:nth-of-type(1) {
+  animation-delay: -2s;
+}
+.items-2 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-2 .control-button:nth-of-type(2),
+.items-2 .item:nth-of-type(2) {
+  animation-delay: 5s;
+}
+
+@keyframes controlAnimation-3 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  9.5%,
+  33.3% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  42.9%,
+  100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes galleryAnimation-3 {
+  0% {
+    opacity: 0;
+  }
+
+  9.5%,
+  33.3% {
+    opacity: 1;
+  }
+
+  42.9%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.items-3.autoplay .control-button {
+  animation: controlAnimation-3 21s infinite;
+}
+.items-3.autoplay .item {
+  animation: galleryAnimation-3 21s infinite;
+}
+.items-3 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-3 .control-button:nth-of-type(1),
+.items-3 .item:nth-of-type(1) {
+  animation-delay: -2s;
+}
+.items-3 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-3 .control-button:nth-of-type(2),
+.items-3 .item:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.items-3 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-3 .control-button:nth-of-type(3),
+.items-3 .item:nth-of-type(3) {
+  animation-delay: 12s;
+}
+
+@keyframes controlAnimation-4 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  7.1%,
+  25% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  32.1%,
+  100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes galleryAnimation-4 {
+  0% {
+    opacity: 0;
+  }
+
+  7.1%,
+  25% {
+    opacity: 1;
+  }
+
+  32.1%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.items-4.autoplay .control-button {
+  animation: controlAnimation-4 28s infinite;
+}
+.items-4.autoplay .item {
+  animation: galleryAnimation-4 28s infinite;
+}
+.items-4 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-4 .control-button:nth-of-type(1),
+.items-4 .item:nth-of-type(1) {
+  animation-delay: -2s;
+}
+.items-4 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-4 .control-button:nth-of-type(2),
+.items-4 .item:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.items-4 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-4 .control-button:nth-of-type(3),
+.items-4 .item:nth-of-type(3) {
+  animation-delay: 12s;
+}
+.items-4 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-4 .control-button:nth-of-type(4),
+.items-4 .item:nth-of-type(4) {
+  animation-delay: 19s;
+}
+
+@keyframes controlAnimation-5 {
+  0% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+
+  5.7%,
+  20% {
+    color: white;
+    color: rgba(255, 255, 255, 0.8);
+  }
+
+  25.7%,
+  100% {
+    color: #ccc;
+    color: rgba(255, 255, 255, 0.4);
+  }
+}
+
+@keyframes galleryAnimation-5 {
+  0% {
+    opacity: 0;
+  }
+
+  5.7%,
+  20% {
+    opacity: 1;
+  }
+
+  25.7%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.items-5.autoplay .control-button {
+  animation: controlAnimation-5 35s infinite;
+}
+.items-5.autoplay .item {
+  animation: galleryAnimation-5 35s infinite;
+}
+.items-5 .control-operator:nth-of-type(1):target ~ .item:nth-of-type(1) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-5 .control-button:nth-of-type(1),
+.items-5 .item:nth-of-type(1) {
+  animation-delay: -2s;
+}
+.items-5 .control-operator:nth-of-type(2):target ~ .item:nth-of-type(2) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-5 .control-button:nth-of-type(2),
+.items-5 .item:nth-of-type(2) {
+  animation-delay: 5s;
+}
+.items-5 .control-operator:nth-of-type(3):target ~ .item:nth-of-type(3) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-5 .control-button:nth-of-type(3),
+.items-5 .item:nth-of-type(3) {
+  animation-delay: 12s;
+}
+.items-5 .control-operator:nth-of-type(4):target ~ .item:nth-of-type(4) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-5 .control-button:nth-of-type(4),
+.items-5 .item:nth-of-type(4) {
+  animation-delay: 19s;
+}
+.items-5 .control-operator:nth-of-type(5):target ~ .item:nth-of-type(5) {
+  pointer-events: auto;
+  opacity: 1;
+}
+.items-5 .control-button:nth-of-type(5),
+.items-5 .item:nth-of-type(5) {
+  animation-delay: 26s;
+}
+.gallery .control-button {
+  color: #ccc;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.gallery .control-button:hover {
+  color: white;
+  color: rgba(255, 255, 255, 0.8);
+}
+.gallery {
+  position: relative;
+  background-size: 100%;
+  height: 360px;
+}
+.gallery .item {
+  height: 325px;
+  overflow: hidden;
+  text-align: center;
+}
+.gallery .item h1 {
+  color: #FFF;
+  font-weight: normal;
+  text-align: left;
+}
+.gallery .item p {
+  color: #FFF;
+  font-size: 20px;
+  text-align: left;
+  padding: 30px 60px 50px 50px;
+}
+.gallery .item img {
+  float: left;
+  padding: 15px 60px 50px 10px;
+}
+.gallery .controls {
+  bottom: -15px;
+  width: 100%;
+  text-align: center;
+  float: left;
+  position: relative;
+  height: 50px;
+}
+.gallery .controls a {
+  font-size: 18px;
+  padding: 10px 15px;
+}
+.gallery .control-button {
+  display: inline-block;
+  margin: 0 0.02em;
+  font-size: 3em;
+  text-align: center;
+  text-decoration: none;
+  transition: color 0.1s;
+}
+.lightbox {
+    margin-top: -50px;
+}
+.filters {
+    width: 100%;
+    height: 80px;
+    float: left;
+    padding: 20px 0 0 0;
+}
+.aboutUs p, .team p {
+    font-size: 22px;
+    padding: 8px 0;
+}
+.aboutUs p strong {
+    font-size: 28px;
+    float: left;
+    padding: 20px 0 50px;
+    color: #5c5a5a;
+}
+.team .headshot p {
+    font-size: 30px;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 48px 0 0 0;
+    float: left;
+}
+.navbarCloud ul li span {
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+}
+.navbarCloud ul li span:hover, .navbarCloud ul li span:active, .navbarCloud ul li span:focus {
+  text-decoration: underline;
+}
+.gearLG {
+    float: right;
+    margin-top: -45px;
+    margin-right: -12px;
+}
+.gearSM {
+    float: right;
+    margin-top: -20px;
+}
+.greenSpacer {
+    float: right;
+    height: 150px;
+}
+.greenSpacer img {
+    width: 100%;
+    height: 150px;
+    float: left;
+    background-color: #95C662;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers:
+ * http://juicystudio.com/article/screen-readers-display-none.php
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+  .social img {
+    width: 20%;
+    padding: 8px;
+  }
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (max-width: 1200px) {
+  .gallery .control-operator:target ~ .controls .control-button {
+    margin: 0 5px;
+  }
+  .process h1 {
+    font-size: 50px;
+    padding-top: 90px;
+    width: 40%;
+    float: left;
+  }
+  .headshot {
+    width: 120px;
+    height: 120px;
+    float: left;
+    margin: 10px 12.2% 10px 0;
+  }
+  .front, .back, .headshot img {
+    border-radius: 75px;
+    height: 120px;
+    width: 120px;
+    float: left;
+  }
+  .team .headshot p {
+    font-size: 24px;
+    margin: 38px 0 0 0;
+  }
+  .teamInfo {
+    float: left;
+    height: 230px;
+    width: 100%;
+    padding: 0;
+  }
+  .filters a {
+    padding: 4px 0.7%;
+  }
+  .large-header p {
+    font-size: 30px;
+  }
+  .large-header {
+      height: 900px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  /* Common style */
+  .effect-sadie, .greenSpacer img {
+    display: none;
+  }
+  .stepSlider {
+    transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+  }
+  .gearSM {
+    margin-top: 44px;
+    width: 115px;
+  }
+  .gearLG {
+    margin-top: 10px;
+    margin-right: -5px;
+    width: 152.5px;
+  }
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .navbarCloud {
+    position: fixed;
+    color: #f9f1e9;
+    background: url('../img/cloudsXL.png') no-repeat top center;
+    margin: 0 auto;
+    z-index: 100;
+    text-align: center;
+    min-height: 110px;
+    width: 1024px;
+    left: 50%;
+    margin-left: -512px;
+    transition: .3s;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #6D1F7E;
+    border: none;
+  }
+  .navbarCloud .navbar ul li {
+    list-style: none;
+    display: block;
+    margin: 40px;
+  }
+  .social img {
+    width: 40%;
+    padding: 8px;
+  }
+  .footer h2 {
+    padding-top: 0;
+  }
+  .isotope {
+    margin-top: 100px;
+  }
+  .filters a {
+    padding: 8px 22px;
+    margin: 8px;
+    display: block;
+    float: left;
+}
+  #showcase {
+    display: none;
+  }
+  .process h2 {
+    font-size: 24px;
+  }
+  .process p {
+    font-size: 14px;
+  }
+  .headshot {
+    margin: 10px 8% 10px 0;
+  }
+  .navCloud {
+    padding-top: 6px;
+    margin: 10px 75px 0 0;
+  }
+  .navbarCloud ul li {
+    margin: 22px;
+  }
+  .navbarCloud ul li span {
+    font-size: 18px;
+  }
+  .gallery .control-operator:target ~ .controls .control-button {
+    margin: 0 5px;
+  }
+  .process h1 {
+    font-size: 50px;
+    padding-top: 55px;
+    width: 60%;
+    float: left;
+  }
+  .process .processHeader {
+    height: 135px;
+  }
+  .gallery .item p {
+    color: #FFF;
+    font-size: 15px;
+    text-align: left;
+    padding: 30px 60px 50px 50px;
+  }
+  .gallery .item img {
+    float: left;
+    width: 25%;
+    padding: 20px 30px 30px 5px;
+  }
+  .gallery .controls a {
+    font-size: 15px;
+    padding: 10px 10px;
+  }
+  .aboutUs p, .team p {
+    font-size: 18px;
+    padding: 8px 0;
+  }
+  .aboutUs p strong {
+    font-size: 22px;
+    float: left;
+    padding: 10px 0 40px;
+    color: #5c5a5a;
+  }
+}
+@media only screen and (max-width: 735px) {
+  .process p, .gearLG, .gearSM {
+      display: none;
+  }
+  .navbar-brand {
+    width: 0px;
+    transition: .3s;
+  }
+  .navbar-brand>img {
+    display: block;
+    width: 100%;
+  }
+  .navbar-brand.grow {
+    width: 30%
+  }
+  .navbarCloud {
+    background: none;
+}
+  .navbar-header {
+    height: 75px;
+    background: url('../img/cloudsXL.png') #6D1F7E no-repeat top center;
+  }
+  .navbarCloud.menuOpen {
+      background: none;
+      height: 455px;
+      transition: .3s;
+  }
+  .navbar-default .navbar-collapse, .navbar-default .navbar-form, .navbar-header {
+    background: #6D1F7E;
+}
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #A481B3;
+  }
+  .navbar-default .navbar-toggle {
+    border-color: #6D1F7E;
+    border-radius: 4px;
+    margin-right: 25px;
+    margin-top: 15px;
+  }
+  .navbar-toggle .icon-bar {
+    display: block;
+    width: 30px;
+    height: 6px;
+    border-radius: 1px;
+  }
+  .navbarCloud .navbar ul li {
+    list-style: none;
+    display: block;
+    margin: 24px;
+  }
+  .navbar.navbar-default.navbar-fixed-top {
+    display: block;
+    height: 55px;
+  }
+  .teamInfo {
+    height: auto;
+}
+.navCloud {
+  display: none;
+}
+  .portfolioItem {
+    width: 100%;
+  }
+  .portfolioItem.height2 {
+    width: 100%;
+  }
+  .portfolio {
+    padding: 0;
+  }
+  .footer {
+    background: #6E1E7D;
+  }
+  .main-title h1 img {
+    width: 250px;
+  }
+  .large-header p {
+    margin-top: 50px;
+    font-size: 25px;
+  }
+  .large-header {
+      height: 700px;
+  }
+  .social img {
+      width: 20%;
+      padding: 8px 15px 8px 0;
+      margin-right: 2%;
+  }
+  .front, .back, .headshot img {
+    border-radius: 0;
+    height: auto;
+    width: 100%;
+    float: left;
+  }
+  .headshot {
+    display: none;
+  }
+  .teamInfo div {
+    display: block;
+    float: left;
+    padding-bottom: 25px;
+  }
+  .filters a {
+    display: none;
+  }
+  .isotope {
+    margin-top: -50px;
+    padding-bottom: 25px;
+  }
+  .stepSlider {
+    width: 105px;
+    float: left;
+    padding: 0;
+}
+.gallery .item h1 {
+  display: none;
+}
+.gallery .item h1.mobileTitle {
+  display: block;
+}
+.gallery .item img {
+    float: none;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 0;
+}
+.process h1 {
+    font-size: 40px;
+    width: 100%;
+}
+.processRight {
+    z-index: 1;
+    height: 150px;
+    padding: 5px 125px;
+}
+.gallery .item p {
+    display: none;
+}
+.team {
+    padding: 40px 0;
+}
+.services {
+    height: 550px;
+}
+.gallery .control-operator:target ~ .controls .control-button {
+    width: 100%;
+    font-size: 22px;
+}
+.gallery .controls .control-button {
+    width: 100%;
+    font-size: 22px;
+}
+.gallery .item {
+    height: auto;
+    overflow: hidden;
+    text-align: center;
+}
+}
+@media only screen and (max-width: 570px) {
+  .teamInfo * {
+    text-align: center;
+}
+  .mobilebio {
+    display: inline;
+  }
+  .fullbio {
+    display: none;
+  }
+  .teamInfo div p.mobilebio {
+    padding-bottom: 20px;
+  }
+  .teamInfo img.mobilebio {
+    border-radius: 50%;
+}
+.starCanvas .main-title {
+    top: 330px;
+}
+.greenSpacer img {
+  display: none;
+}
+.gallery .controls {
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    float: left;
+    position: relative;
+    height: auto;
+}
+}
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
